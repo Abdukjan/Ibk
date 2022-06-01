@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Koulen&family=Macondo&family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', serif;
+}
+
+body {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  padding: 40px;
+  background: #2f3e46;
+  min-height: 100vh;
+}
+
+.bx{
+  font-size: 23px;
+  color: white;
+  border-radius: 7px;
+  background-color: #354f52;
+}
+
+.bx:hover {
+  font-size: 25px;
+  border-radius: 7px;
+  color: #354f52;
+  background-color: white;
+  transition: 0.6s ease-in;
+}
+
+
+ul {
+  position: relative;
+  transform: skewY(-17deg);
+}
+
+ul li {
+  list-style: none;
+  position: relative;
+  width: 200px;
+  background: #3e3f46;
+  padding: 16px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 33px;
+  left: -33px;
+  height: 100%;
+  background: #354f52;
+  transform-origin: right;
+  transform: skewY(50deg);
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.5s;
+}
+
+ul li:hover a {
+  color: aqua;
+}
+
